@@ -3,10 +3,10 @@ import xmltodict
 from urllib.request import urlopen
 from zipfile import ZipFile
 from io import BytesIO
-#import geopandas as gpd
-#import fiona
-#import matplotlib.pyplot as plt
-#from shapely.geometry import Polygon, Point, MultiPolygon, shape
+import geopandas as gpd
+import fiona
+import matplotlib.pyplot as plt
+from shapely.geometry import Polygon, Point, MultiPolygon, shape
 
 
 link = "http://www.nhc.noaa.gov/gis/kml/nhc_active.kml"
