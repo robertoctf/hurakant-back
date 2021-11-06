@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <NetworkLinkControl>
+    <minRefreshPeriod>120</minRefreshPeriod>
+    <expires>Thu Jun  1 15:31:24 UTC 2017</expires>
+  </NetworkLinkControl>
+  <Document id="active">
+    <name>Active Tropical Cyclones</name>
+    <description>
+      <![CDATA[<TABLE>
+      <TR><TD><B>Last Update:</B> Thu Jun  1 13:31:24 UTC 2017</TD></TR>
+      <TR><TD><B>Created By:</B> NOAA/NWS National Hurricane Center</TD></TR>
+      <TR><TD><B>Disclaimer:</B> The NHC Active KML format is an experimental product.</TD></TR>
+      <TR><TD><B>For More Information: </B><a href="http://www.nhc.noaa.gov">http://www.nhc.noaa.gov</a></TD></TR></TABLE>]]>
+    </description>
+    <ScreenOverlay id="activeLegend">
+      <name>Legend</name>
+      <drawOrder>100</drawOrder>
+      <Icon>
+        <href>http://www.nhc.noaa.gov/images/interactive_cone_legend.jpg</href>
+      </Icon>
+      <overlayXY x="0" y="0" xunits="fraction" yunits="fraction" />
+      <screenXY x="0" y="0" xunits="fraction" yunits="fraction" />
+      <rotationXY x="0.5" y="0.5" xunits="fraction" yunits="fraction" />
+      <size x="-1" y="-1" xunits="pixels" yunits="pixels" />
+      <visibility>0</visibility>
+    </ScreenOverlay>
+    <Folder id="wsp">
+      <name>Wind Speed Probabilities (120 hours)</name>
+      <visibility>1</visibility>
+      <open>1</open>
+      <Folder id="wspValues">
+        <name>Values</name>
+        <visibility>1</visibility>
+        <open>1</open>
+        <Style>
+          <ListStyle>
+            <listItemType>radioFolder</listItemType>
+          </ListStyle>
+        </Style>
+        <NetworkLink id="wsp34">
+          <name>Probability of Tropical-Storm-force winds (34-kt)</name>
+          <visibility>1</visibility>
+          <open>0</open>
+          <Link>
+            <href>http://www.nhc.noaa.gov/gis/forecast/archive/2017060106_wsp34knt120hr_5km.kmz</href>
+          </Link>
+        </NetworkLink>
+        <NetworkLink id="wsp50">
+          <name>Probability of 50 knot winds</name>
+          <visibility>0</visibility>
+          <open>0</open>
+          <Link>
+            <href>http://www.nhc.noaa.gov/gis/forecast/archive/2017060106_wsp50knt120hr_5km.kmz</href>
+          </Link>
+        </NetworkLink>
+        <NetworkLink id="wsp64">
+          <name>Probability of Hurricane-force winds (64-kt)</name>
+          <visibility>0</visibility>
+          <open>0</open>
+          <Link>
+            <href>http://www.nhc.noaa.gov/gis/forecast/archive/2017060106_wsp64knt120hr_5km.kmz</href>
+          </Link>
+        </NetworkLink>
+      </Folder>
+    </Folder>
+    <Folder id="ep2">
+      <name>Tropical Depression Two-E</name>
+      <visibility>1</visibility>
+      <open>1</open>
+      <ExtendedData>
+        <Data name="tcType">
+          <value>Tropical Depression</value>
+        </Data>
+        <Data name="tcName">
+          <value>Two-E</value>
+        </Data>
+        <Data name="wallet">
+          <value>EP2</value>
+        </Data>
+        <Data name="atcfID">
+          <value>EP022017</value>
+        </Data>
+        <Data name="centerLat">
+          <value>15.3</value>
+        </Data>
+        <Data name="centerLon">
+          <value>-97.1</value>
+        </Data>
+        <Data name="dateTime">
+          <value>7:00 AM CDT Thu Jun 1</value>
+        </Data>
+        <Data name="movement">
+          <value>NNE at 6 mph</value>
+        </Data>
+        <Data name="minimumPressure">
+          <value>1005 mb</value>
+        </Data>
+        <Data name="maxSustainedWind">
+          <value>35 mph</value>
+        </Data>
+        <Data name="headline">
+          <value> ...CENTER OF THE DEPRESSION APPROACHING THE COAST OF MEXICO...</value>
+        </Data>
+      </ExtendedData>
+      <ExtendedData xmlns:tc="http://www.nhc.noaa.gov/cyclones">
+        <tc:type>Tropical Depression</tc:type>
+        <tc:name>Two-E</tc:name>
+        <tc:wallet>EP2</tc:wallet>
+        <tc:atcfID>EP022017</tc:atcfID>
+        <tc:centerLat>15.3</tc:centerLat>
+        <tc:centerLon>-97.1</tc:centerLon>
+        <tc:dateTime>7:00 AM CDT Thu Jun 1</tc:dateTime>
+        <tc:movement>NNE at 6 mph</tc:movement>
+        <tc:minimumPressure>1005 mb</tc:minimumPressure>
+        <tc:maxSustainedWind>35 mph</tc:maxSustainedWind>
+        <tc:headline> ...CENTER OF THE DEPRESSION APPROACHING THE COAST OF MEXICO...</tc:headline>
+      </ExtendedData>
+      <NetworkLink id="cone">
+        <name>Cone of Uncertainty</name>
+        <visibility>1</visibility>
+        <open>0</open>
+        <Link>
+          <href>http://www.nhc.noaa.gov/storm_graphics/api/EP022017_004Aadv_CONE.kmz</href>
+        </Link>
+      </NetworkLink>
+      <NetworkLink id="track">
+        <name>Track Forecast</name>
+        <visibility>1</visibility>
+        <open>0</open>
+        <Link>
+          <href>http://www.nhc.noaa.gov/storm_graphics/api/EP022017_004Aadv_TRACK.kmz</href>
+        </Link>
+      </NetworkLink>
+      <NetworkLink id="ww">
+        <name>Wind Watches and Warnings</name>
+        <visibility>1</visibility>
+        <open>0</open>
+        <Link>
+          <href>http://www.nhc.noaa.gov/storm_graphics/api/EP022017_004Aadv_WW.kmz</href>
+        </Link>
+      </NetworkLink>
+      <NetworkLink id="initialwindfield">
+        <name>Initial Extent of Winds</name>
+        <visibility>1</visibility>
+        <open>0</open>
+        <Link>
+          <href>http://www.nhc.noaa.gov/storm_graphics/api/EP022017_initialradii_004Aadv.kmz</href>
+        </Link>
+      </NetworkLink>
+    </Folder>
+  </Document>
+</kml>

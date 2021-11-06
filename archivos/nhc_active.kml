@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <NetworkLinkControl>
+    <minRefreshPeriod>120</minRefreshPeriod>
+    <expires>Sat Nov  6 10:24:36 UTC 2021</expires>
+  </NetworkLinkControl>
+  <Document id="active">
+    <name>Active Tropical Cyclones</name>
+    <description>
+      <![CDATA[<TABLE>
+      <TR><TD><B>Last Update:</B> Sat Nov  6 08:24:36 UTC 2021</TD></TR>
+      <TR><TD><B>Created By:</B> NOAA/NWS National Hurricane Center</TD></TR>
+      <TR><TD><B>Disclaimer:</B> The NHC Active KML format is an experimental product.</TD></TR>
+      <TR><TD><B>For More Information: </B><a href="https://www.nhc.noaa.gov">https://www.nhc.noaa.gov</a></TD></TR></TABLE>]]>
+    </description>
+    <ScreenOverlay id="activeLegend">
+      <name>Legend</name>
+      <drawOrder>100</drawOrder>
+      <Icon>
+        <href>https://www.nhc.noaa.gov/images/interactive_cone_legend.jpg</href>
+      </Icon>
+      <overlayXY x="0" y="0" xunits="fraction" yunits="fraction" />
+      <screenXY x="0" y="0" xunits="fraction" yunits="fraction" />
+      <rotationXY x="0.5" y="0.5" xunits="fraction" yunits="fraction" />
+      <size x="-1" y="-1" xunits="pixels" yunits="pixels" />
+      <visibility>0</visibility>
+    </ScreenOverlay>
+    <Folder id="wsp">
+      <name>Wind Speed Probabilities (120 hours)</name>
+      <visibility>1</visibility>
+      <open>1</open>
+      <Folder id="wspValues">
+        <name>Values</name>
+        <visibility>1</visibility>
+        <open>1</open>
+        <Style>
+          <ListStyle>
+            <listItemType>radioFolder</listItemType>
+          </ListStyle>
+        </Style>
+        <NetworkLink id="wsp34">
+          <name>Probability of Tropical-Storm-force winds (34-kt)</name>
+          <visibility>1</visibility>
+          <open>0</open>
+          <Link>
+            <href>https://www.nhc.noaa.gov/gis/forecast/archive/2021110600_wsp34knt120hr_5km.kmz</href>
+          </Link>
+        </NetworkLink>
+        <NetworkLink id="wsp50">
+          <name>Probability of 50 knot winds</name>
+          <visibility>0</visibility>
+          <open>0</open>
+          <Link>
+            <href>https://www.nhc.noaa.gov/gis/forecast/archive/2021110600_wsp50knt120hr_5km.kmz</href>
+          </Link>
+        </NetworkLink>
+        <NetworkLink id="wsp64">
+          <name>Probability of Hurricane-force winds (64-kt)</name>
+          <visibility>0</visibility>
+          <open>0</open>
+          <Link>
+            <href>https://www.nhc.noaa.gov/gis/forecast/archive/2021110600_wsp64knt120hr_5km.kmz</href>
+          </Link>
+        </NetworkLink>
+      </Folder>
+    </Folder>
+    <Folder id="at1">
+      <name>Tropical Storm Wanda</name>
+      <visibility>1</visibility>
+      <open>1</open>
+      <ExtendedData>
+        <Data name="tcType">
+          <value>Tropical Storm</value>
+        </Data>
+        <Data name="tcName">
+          <value>Wanda</value>
+        </Data>
+        <Data name="wallet">
+          <value>AT1</value>
+        </Data>
+        <Data name="atcfID">
+          <value>AL212021</value>
+        </Data>
+        <Data name="centerLat">
+          <value>38.0</value>
+        </Data>
+        <Data name="centerLon">
+          <value>-38.1</value>
+        </Data>
+        <Data name="dateTime">
+          <value>3:00 AM GMT Sat Nov 6</value>
+        </Data>
+        <Data name="movement">
+          <value>S at 9 mph</value>
+        </Data>
+        <Data name="minimumPressure">
+          <value>998 mb</value>
+        </Data>
+        <Data name="maxSustainedWind">
+          <value>50 mph</value>
+        </Data>
+        <Data name="headline">
+          <value> ...WANDA HOLDS STEADY... ...EXPECTED TO TURN NORTHEASTWARD LATER TODAY...</value>
+        </Data>
+      </ExtendedData>
+      <ExtendedData xmlns:tc="https://www.nhc.noaa.gov/cyclones">
+        <tc:type>Tropical Storm</tc:type>
+        <tc:name>Wanda</tc:name>
+        <tc:wallet>AT1</tc:wallet>
+        <tc:atcfID>AL212021</tc:atcfID>
+        <tc:centerLat>38.0</tc:centerLat>
+        <tc:centerLon>-38.1</tc:centerLon>
+        <tc:dateTime>3:00 AM GMT Sat Nov 6</tc:dateTime>
+        <tc:movement>S at 9 mph</tc:movement>
+        <tc:minimumPressure>998 mb</tc:minimumPressure>
+        <tc:maxSustainedWind>50 mph</tc:maxSustainedWind>
+        <tc:headline> ...WANDA HOLDS STEADY... ...EXPECTED TO TURN NORTHEASTWARD LATER TODAY...</tc:headline>
+      </ExtendedData>
+      <NetworkLink id="pasttrack">
+        <name>Past Track</name>
+        <visibility>1</visibility>
+        <open>0</open>
+        <Link>
+          <href>https://www.nhc.noaa.gov/gis/best_track/al212021_best_track.kmz</href>
+        </Link>
+      </NetworkLink>
+      <NetworkLink id="cone">
+        <name>Cone of Uncertainty</name>
+        <visibility>1</visibility>
+        <open>0</open>
+        <Link>
+          <href>https://www.nhc.noaa.gov/storm_graphics/api/AL212021_025adv_CONE.kmz</href>
+        </Link>
+      </NetworkLink>
+      <NetworkLink id="track">
+        <name>Track Forecast</name>
+        <visibility>1</visibility>
+        <open>0</open>
+        <Link>
+          <href>https://www.nhc.noaa.gov/storm_graphics/api/AL212021_025adv_TRACK.kmz</href>
+        </Link>
+      </NetworkLink>
+      <NetworkLink id="initialwindfield">
+        <name>Initial Extent of Winds</name>
+        <visibility>1</visibility>
+        <open>0</open>
+        <Link>
+          <href>https://www.nhc.noaa.gov/storm_graphics/api/AL212021_initialradii_025adv.kmz</href>
+        </Link>
+      </NetworkLink>
+    </Folder>
+    <Folder id="ep3">
+      <name>Tropical Depression Eighteen-E</name>
+      <visibility>1</visibility>
+      <open>1</open>
+      <ExtendedData>
+        <Data name="tcType">
+          <value>TROPICAL DEPRESSION</value>
+        </Data>
+        <Data name="tcName">
+          <value>Eighteen-E</value>
+        </Data>
+        <Data name="wallet">
+          <value>EP3</value>
+        </Data>
+        <Data name="atcfID">
+          <value>EP182021</value>
+        </Data>
+        <Data name="centerLat">
+          <value>8.9</value>
+        </Data>
+        <Data name="centerLon">
+          <value>-94.5</value>
+        </Data>
+        <Data name="dateTime">
+          <value>10:00 PM CDT Fri Nov 5</value>
+        </Data>
+        <Data name="movement">
+          <value>W at 12 mph</value>
+        </Data>
+        <Data name="minimumPressure">
+          <value>1007 mb</value>
+        </Data>
+        <Data name="maxSustainedWind">
+          <value>35 mph</value>
+        </Data>
+        <Data name="headline">
+          <value> ...DEPRESSION CONTINUES TO STRUGGLE...</value>
+        </Data>
+      </ExtendedData>
+      <ExtendedData xmlns:tc="https://www.nhc.noaa.gov/cyclones">
+        <tc:type>TROPICAL DEPRESSION</tc:type>
+        <tc:name>Eighteen-E</tc:name>
+        <tc:wallet>EP3</tc:wallet>
+        <tc:atcfID>EP182021</tc:atcfID>
+        <tc:centerLat>8.9</tc:centerLat>
+        <tc:centerLon>-94.5</tc:centerLon>
+        <tc:dateTime>10:00 PM CDT Fri Nov 5</tc:dateTime>
+        <tc:movement>W at 12 mph</tc:movement>
+        <tc:minimumPressure>1007 mb</tc:minimumPressure>
+        <tc:maxSustainedWind>35 mph</tc:maxSustainedWind>
+        <tc:headline> ...DEPRESSION CONTINUES TO STRUGGLE...</tc:headline>
+      </ExtendedData>
+      <NetworkLink id="pasttrack">
+        <name>Past Track</name>
+        <visibility>1</visibility>
+        <open>0</open>
+        <Link>
+          <href>https://www.nhc.noaa.gov/gis/best_track/ep182021_best_track.kmz</href>
+        </Link>
+      </NetworkLink>
+      <NetworkLink id="cone">
+        <name>Cone of Uncertainty</name>
+        <visibility>1</visibility>
+        <open>0</open>
+        <Link>
+          <href>https://www.nhc.noaa.gov/storm_graphics/api/EP182021_007adv_CONE.kmz</href>
+        </Link>
+      </NetworkLink>
+      <NetworkLink id="track">
+        <name>Track Forecast</name>
+        <visibility>1</visibility>
+        <open>0</open>
+        <Link>
+          <href>https://www.nhc.noaa.gov/storm_graphics/api/EP182021_007adv_TRACK.kmz</href>
+        </Link>
+      </NetworkLink>
+      <NetworkLink id="initialwindfield">
+        <name>Initial Extent of Winds</name>
+        <visibility>1</visibility>
+        <open>0</open>
+        <Link>
+          <href>https://www.nhc.noaa.gov/storm_graphics/api/EP182021_initialradii_007adv.kmz</href>
+        </Link>
+      </NetworkLink>
+    </Folder>
+  </Document>
+</kml>

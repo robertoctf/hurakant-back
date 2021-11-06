@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+ <Document>
+  <name>National Hurricane Center</name>
+  <open>1</open>
+  <description>
+    <![CDATA[<TABLE>
+    <TR><TD><B>Title:</B> National Hurricane Center Active Feed</TD></TR>
+    <TR><TD><B>Description:</B> Current NHC forecasts and data can be found within this KML feed.
+    </TD></TR>
+    <TR><TD><B>Date Created:</B> 23 Aug 2012</TD></TR>
+    <TR><TD><B>Created By:</B> NOAA/NWS National Hurricane Center</TD></TR>
+    <TR><TD><B>Disclaimer:</B> The NHC KML format is an experimental product that the National Hurricane Center is testing during the 2012 hurricane season.</TD></TR>
+    <TR><TD><B>For More Information: </B><a href="http://www.nhc.noaa.gov">http://www.nhc.noaa.gov</a></TD></TR></TABLE>]]>
+  </description>
+  <NetworkLink>
+    <name>Active Tropical Cyclones</name>
+    <open>1</open>
+    <visibility>1</visibility>
+    <Link>                                                                                                                                         
+     <href>http://www.nhc.noaa.gov/gis/kml/nhc_active.kml</href>                                                                                                    
+     <refreshMode>onInterval</refreshMode>                                                                                                    
+     <refreshInterval>600</refreshInterval>                                                                                                    
+    </Link>                                                                                                                                         
+  </NetworkLink>                                                                                                                                        
+ </Document>
+</kml>
