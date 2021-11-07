@@ -4,9 +4,12 @@ from urllib.request import urlopen
 from zipfile import ZipFile
 from io import BytesIO
 import geopandas as gpd
+import folium
+import webbrowser
 import fiona
 import matplotlib.pyplot as plt
 from shapely.geometry import Polygon, Point, MultiPolygon, shape
+
 
 
 link = "http://www.nhc.noaa.gov/gis/kml/nhc_active.kml"
@@ -65,6 +68,7 @@ def main():
         })
 
     pprint(wsp)
+    pprint(cyclones)
             
 def kmzToKml(link):
     resp = urlopen(link)
@@ -86,23 +90,21 @@ def main2():
     # Aqui va el archivo KML
     HURRICAN_KML = 'al212021_025adv_CONE.kml'
     # Aqui va el punto GPS
-    GPS_POINT = (-30.0004, 43.63373)
-
     gdf_hurrican = read_kml(HURRICAN_KML)
-    gdf_hurrican.geometry = convert_3D_2D(gdf_hurrican.geometry)
-    poly_hurrican = gdf_hurrican.iloc[0]['geometry']
 
-    point_gps = Point(GPS_POINT)
 
-    # Interseccion entre el punto del gps y el
-    # poligono del huracan
-    print('Hay Interseccion? = ', point_gps.within(poly_hurrican))
+    mymmap= folium.Map(
+    location=[19, -89],
+    zoom_start=6,
+    tiles=None)
+    folium.TileLayer("cartodbpositron").add_to(mymmap)
+    folium.TileLayer("openstreetmap").add_to(mymmap)
 
-    # Graficando el huracan y el punto GPS
-    x,y = poly_hurrican.exterior.xy
-    plt.plot(x,y)
-    plt.plot(point_gps.x, point_gps.y, marker='o', markersize=3, color="red")
-    plt.show()
+    GT = gdf_hurrican.geometry.to_json()
+    sp = folium.features.GeoJson( GT, name= 'Cono Incertidumbre')
+    mymmap.add_child(sp)
+    mymmap.add_child(folium.map.LayerControl())
+    mymmap.save("nombre.html")
 
 
 
@@ -133,4 +135,6 @@ def convert_3D_2D(geometry):
 
 
 
-main()
+
+
+main2()
